@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 // Restoring standard path aliases which are standard for Next.js environments
 import { db } from '@/lib/firebase';
-import Logo from '@/public/Logo.png';
+import Logo from '../../public/Logo.png';
 import {
     collection,
     query,
