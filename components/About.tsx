@@ -81,8 +81,11 @@ export function About({ team = DEFAULT_TEAM }: AboutProps) {
               </p>
             </div>
              <div className='flex justify-center items-center'>
-              <img src={https://bouve.northeastern.edu/wp-content/uploads/2023/06/doctor-of-health-science-vs-doctor-of-medical-science-whats-the-difference-northeastern-graduate.webp} alt="Doctor" className="w-auto h-[25rem] rounded-lg" />
-             </div>
+              <img 
+  src="https://bouve.northeastern.edu/wp-content/uploads/2023/06/doctor-of-health-science-vs-doctor-of-medical-science-whats-the-difference-northeastern-graduate.webp" 
+  alt="Doctor" 
+  className="w-auto h-[25rem] rounded-lg" 
+/></div>
           </div>
         </div>
 
