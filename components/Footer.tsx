@@ -114,15 +114,15 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start gap-3">
                 <span className="text-sky-400">📍</span>
-                <span>Hokandara Road, Athurugiriya</span>
+                <span>Kandy Road, Colombo</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-sky-400">📞</span>
-                <span>+94 77 742 1620</span>
+                <span>+94 77 234 5678</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-sky-400">✉️</span>
-                <span>mkovitigala@gmail.com</span>
+                <span>smilehublanka@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-sky-400">🕐</span>
