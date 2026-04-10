@@ -31,17 +31,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    details: ['The Smile Hub', 'Hokandara Road, Athurugiriya'],
+    details: ['The Smile Hub', 'Kandy Road, colombo'],
   },
   {
     icon: Phone,
     title: 'Call Us',
-    details: ['+94 77 742 1620'],
+    details: ['+94 77 234 5678'],
   },
   {
     icon: Mail,
     title: 'Email Us',
-    details: ['mkovitigala@gmail.com'],
+    details: ['smilehublanka@gmail.com'],
   },
   {
     icon: Clock,
