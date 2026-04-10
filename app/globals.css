@@ -211,3 +211,7 @@ html {
   background-image: radial-gradient(circle at 1px 1px, oklch(0.7 0.15 200 / 0.15) 1px, transparent 0);
   background-size: 40px 40px;
 }
+
+buttons {
+  cursor: pointer;
+}
