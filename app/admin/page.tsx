@@ -400,7 +400,7 @@ export default function AdminPage() {
         return (
             <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
                 <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 text-center max-w-sm w-full">
-                    <img src={Logo} className="w-12 h-12 mx-auto mb-4" />
+                    <img src={Logo.src} alt="Smile Hub Logo" className="w-auto h-6" />
                     <h2 className="text-xl font-bold mb-6 text-gray-900">Admin Authentication</h2>
                     <LoginButton />
                 </div>
