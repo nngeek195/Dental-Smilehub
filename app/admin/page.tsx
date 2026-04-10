@@ -426,7 +426,7 @@ export default function AdminPage() {
                         </span>
                     </div>
                     <a href="/">
-                        <Button type="button" variant="ghost" size="sm" className="rounded-full text-gray-500 hover:text-sky-600">
+                        <Button type="button" variant="ghost" size="sm" className="rounded-full text-gray-500 hover:text-sky-600 cursor: pointer">
                             <ArrowLeft className="w-4 h-4 mr-2" /> View Site
                         </Button>
                     </a>
@@ -439,22 +439,22 @@ export default function AdminPage() {
                         <h1 className="text-3xl font-bold text-gray-900">Practice Dashboard</h1>
                         <p className="text-gray-500 text-sm">Real-time scheduling and inquiry management.</p>
                     </div>
-                    <LoginButton />
+                    <LoginButton className="cursor: pointer"/>
                 </div>
 
                 <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-8">
                     <TabsList className="bg-white border p-1 shadow-sm inline-flex h-auto rounded-2xl">
                         <TabsTrigger value="calendar" className="rounded-xl py-2.5 px-5">
-                            <Calendar className="w-4 h-4 mr-2" /> Calendar
+                            <Calendar className="w-4 h-4 mr-2 cursor: pointer" /> Calendar
                         </TabsTrigger>
                         <TabsTrigger value="appointments" className="rounded-xl py-2.5 px-5">
-                            <List className="w-4 h-4 mr-2" /> List
+                            <List className="w-4 h-4 mr-2 cursor: pointer" /> List
                         </TabsTrigger>
                         <TabsTrigger value="gallery" className="rounded-xl py-2.5 px-5">
-                            <ImageIcon className="w-4 h-4 mr-2" /> Gallery
+                            <ImageIcon className="w-4 h-4 mr-2 cursor: pointer" /> Gallery
                         </TabsTrigger>
                         <TabsTrigger value="messages" className="rounded-xl py-2.5 px-5 relative">
-                            <MessageSquare className="w-4 h-4 mr-2" /> Messages
+                            <MessageSquare className="w-4 h-4 mr-2 cursor: pointer" /> Messages
                             {unreadCount > 0 && (
                                 <span className="absolute -top-1 -right-1 flex h-4 w-4">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
@@ -480,7 +480,7 @@ export default function AdminPage() {
                                     onClick={() => setIsBookingDialogOpen(true)}
                                     className="bg-sky-600 hover:bg-sky-700 text-white rounded-full shadow-lg shadow-sky-100 transition-all hover:scale-105"
                                 >
-                                    <UserPlus className="w-4 h-4 mr-2" /> Book Session
+                                    <UserPlus className="w-4 h-4 mr-2 cursor: pointer" /> Book Session
                                 </Button>
                             </div>
 
