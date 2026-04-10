@@ -1,11 +1,11 @@
 'use client';
 
+import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Award, Users, Clock, Heart } from 'lucide-react';
 import { DEFAULT_TEAM, TeamMember } from '@/types';
 import { cn } from '@/lib/utils';
-import Doctor from '../public/Doctor.png';
 
 interface AboutProps {
   team?: TeamMember[];
@@ -46,17 +46,20 @@ export function About({ team = DEFAULT_TEAM }: AboutProps) {
   return (
     <section id="about" className="py-20 md:py-28 bg-gradient-to-b from-sky-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 bg-sky-100 text-sky-600 rounded-full text-sm font-medium mb-4">
             About Us
           </span>
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Your Trusted Partner in{' '}
             <span className="bg-gradient-to-r from-sky-500 to-sky-600 bg-clip-text text-transparent">
               Dental Health
             </span>
           </h2>
+
           <p className="text-lg text-gray-600">
             For over 15 years, Smile Hub has been dedicated to providing exceptional
             dental care in a comfortable, welcoming environment. Our team of expert
@@ -64,33 +67,43 @@ export function About({ team = DEFAULT_TEAM }: AboutProps) {
           </p>
         </div>
 
-        {/* Mission Statement */}
+        {/* Mission Section */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
+            
+            {/* Text */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Our Mission
+              </h3>
+
               <p className="text-gray-600 leading-relaxed mb-4">
                 At Smile Hub, we believe everyone deserves access to quality dental care.
                 Our mission is to provide comprehensive, compassionate dental services that
                 help our patients achieve and maintain optimal oral health.
               </p>
+
               <p className="text-gray-600 leading-relaxed">
                 We are committed to staying at the forefront of dental technology and
                 techniques, continuously improving our skills to deliver the best possible
                 care. Your comfort and well-being are our top priorities.
               </p>
             </div>
-             <div className='flex justify-center items-center'>
-              <img 
-  src="https://bouve.northeastern.edu/wp-content/uploads/2023/06/doctor-of-health-science-vs-doctor-of-medical-science-whats-the-difference-northeastern-graduate.webp" 
-  alt="Doctor" 
-  className="w-auto h-[25rem] rounded-lg" 
-/></div>
+
+            {/* Image */}
+            <div className="flex justify-center items-center">
+              <div className="relative w-full max-w-md h-[25rem]">
+                <Image
+                  src="https://bouve.northeastern.edu/wp-content/uploads/2023/06/doctor-of-health-science-vs-doctor-of-medical-science-whats-the-difference-northeastern-graduate.webp"
+                  alt="Doctor"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+
           </div>
         </div>
-
-
-
 
       </div>
     </section>
