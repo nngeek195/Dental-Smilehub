@@ -94,7 +94,7 @@ export function About({ team = DEFAULT_TEAM }: AboutProps) {
             <div className="flex justify-center items-center">
               <div className="relative w-full max-w-md h-[25rem]">
                 <Image
-                  src="https://bouve.northeastern.edu/wp-content/uploads/2023/06/doctor-of-health-science-vs-doctor-of-medical-science-whats-the-difference-northeastern-graduate.webp"
+                  src="https://www.scripps.org/sparkle-assets/images/new_doctor_fb-32abb9ba141c8223aadebce90782ac68.jpeg"
                   alt="Doctor"
                   fill
                   className="object-cover rounded-lg"
