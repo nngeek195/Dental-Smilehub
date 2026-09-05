@@ -82,7 +82,7 @@ export function About({ team = DEFAULT_TEAM }: AboutProps) {
             </div>
              <div className='flex justify-center items-center'>
               <img 
-                src="https://ladydr.com/wp-content/uploads/2024/08/ladydr-intro-womens-wellness-kerala.jpg" alt="Doctor"  
+                src="https://media.licdn.com/dms/image/sync/v2/D5627AQEejCGnehrK6A/articleshare-shrink_480/B56Z19RXLPIIAo-/0/1775923197341?e=1789246800&v=beta&t=U_DBYmFT_D9DG50M3EVRqaQRpvqa4zGh8LD9a3v2zN4" alt="Doctor"  
                 className="w-auto h-[25rem] rounded-lg" /></div>
           </div>
         </div>
